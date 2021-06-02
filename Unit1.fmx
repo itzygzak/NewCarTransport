@@ -13,6 +13,59 @@ object Form1: TForm1
     Size.Width = 250.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 1
+    TabOrder = 0
+    object tbc1: TTabControl
+      Position.X = 176.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 449.000000000000000000
+      Size.Height = 449.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        449s
+        423s
+        449s
+        423s
+        449s
+        423s)
+      object tbtm1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 52.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tbtm1'
+      end
+      object tbtm2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 52.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tbtm2'
+      end
+      object tbtm3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 52.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tbtm3'
+      end
+    end
   end
 end
