@@ -1,0 +1,33 @@
+inherited FrmStart_XLgXhdpiTb: TFrmStart_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited mltvw1: TMultiView
+    Size.Height = 1255.000000000000000000
+    Visible = False
+    inherited tbc1: TTabControl
+      Sizes = (
+        369s
+        400s
+        369s
+        400s
+        369s
+        400s)
+      inherited tbtm1: TTabItem
+        Size.Width = 47.000000000000000000
+        ExplicitSize.cx = 122.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited tbtm2: TTabItem
+        Size.Width = 47.000000000000000000
+        ExplicitSize.cx = 122.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited tbtm3: TTabItem
+        Size.Width = 47.000000000000000000
+        ExplicitSize.cx = 123.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end

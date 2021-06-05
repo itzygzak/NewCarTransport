@@ -42,6 +42,7 @@ type
     AuthenticateLabel: TLabel;
     Label1: TLabel;
     procedure VertScrollBox1Resize(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -51,6 +52,8 @@ type
 implementation
 
 {$R *.fmx}
+
+
 
 procedure TLoginFrame1.VertScrollBox1Resize(Sender: TObject);
 begin

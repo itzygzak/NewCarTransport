@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FrmStart: TFrmStart
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -8,39 +8,48 @@ object Form1: TForm1
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object swtch2: TSwitch
+    IsChecked = False
+    Position.X = 408.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 1
+  end
   object mltvw1: TMultiView
-    NavigationPaneOptions.CollapsedWidth = 169.000000000000000000
+    NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
     Size.Width = 250.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object tbc1: TTabControl
-      Position.X = 176.000000000000000000
+      Position.X = 256.000000000000000000
       Position.Y = 8.000000000000000000
-      Size.Width = 449.000000000000000000
+      Size.Width = 369.000000000000000000
       Size.Height = 449.000000000000000000
       Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
       TabIndex = 0
       TabOrder = 0
       TabPosition = PlatformDefault
       Sizes = (
-        449s
-        423s
-        449s
-        423s
-        449s
-        423s)
+        369s
+        400s
+        369s
+        400s
+        369s
+        400s)
       object tbtm1: TTabItem
         CustomIcon = <
           item
           end>
         IsSelected = True
         Size.Width = 52.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'tbtm1'
+        ExplicitSize.cx = 122.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
       end
       object tbtm2: TTabItem
         CustomIcon = <
@@ -48,11 +57,13 @@ object Form1: TForm1
           end>
         IsSelected = False
         Size.Width = 52.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'tbtm2'
+        ExplicitSize.cx = 122.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
       end
       object tbtm3: TTabItem
         CustomIcon = <
@@ -60,12 +71,26 @@ object Form1: TForm1
           end>
         IsSelected = False
         Size.Width = 52.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'tbtm3'
+        ExplicitSize.cx = 123.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
       end
+    end
+    object swtch1: TSwitch
+      IsChecked = False
+      Position.X = 64.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 1
+    end
+    object edt1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 48.000000000000000000
+      Position.Y = 136.000000000000000000
     end
   end
 end

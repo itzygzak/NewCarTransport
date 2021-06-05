@@ -22,6 +22,8 @@ type
   TForm1Login = class(TForm)
     EmeraldCrystalStyleBook: TStyleBook;
     LoginFrame11: TLoginFrame1;
+    procedure LoginFrame11AuthenticateRectBTNClick(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -32,12 +34,20 @@ var
   Form1Login: TForm1Login;
 
 implementation
+uses Unit1;
+
 
 {$R *.fmx}
+{$R *.Windows.fmx MSWINDOWS}
 
 // Changes to the layout should be made inside of the TFrame itself. Once changes are made
 // to the TFrame you can delete it from the TForm and re-add it. Set its Align property to
 // Client. Optionally, it's ClipChildren property can be set to True if there are any overlapping
 // background images.
+
+procedure TForm1Login.LoginFrame11AuthenticateRectBTNClick(Sender: TObject);
+begin
+ FrmStart.ShowModal;
+end;
 
 end.
