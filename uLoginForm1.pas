@@ -47,7 +47,7 @@ uses Unit1;
 
 procedure TForm1Login.LoginFrame11AuthenticateRectBTNClick(Sender: TObject);
 begin
- FrmStart.ShowModal;
+// FrmStart.ShowModal;
 end;
 
 end.

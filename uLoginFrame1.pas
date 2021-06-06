@@ -16,7 +16,8 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.Edit, FMX.MultiView;
+  FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.Edit, FMX.MultiView,
+  System.IniFiles, Winapi.Windows;
 
 type
   TLoginFrame1 = class(TFrame)
@@ -42,6 +43,7 @@ type
     AuthenticateLabel: TLabel;
     Label1: TLabel;
     procedure VertScrollBox1Resize(Sender: TObject);
+    procedure AuthenticateRectBTNClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -49,11 +51,27 @@ type
     { Public declarations }
   end;
 
+var
+INI : TIniFile;
+
 implementation
+uses DataModule;
 
 {$R *.fmx}
 
 
+
+procedure TLoginFrame1.AuthenticateRectBTNClick(Sender: TObject);
+begin
+  INI := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'carTransp.ini');         //do odczytu po³¹czenie z pliku INI
+  try
+    DataMod.ibDtBase1.DatabaseName := INI.ReadString('Baza', 'Path', '');
+  finally
+    INI.Free;
+  end;
+  if DataMod.ibDtBase1.Connected = False then
+    DataMod.ibDtBase1.Connected := True;   //polacz z baza
+end;
 
 procedure TLoginFrame1.VertScrollBox1Resize(Sender: TObject);
 begin
